@@ -1,4 +1,4 @@
-setwd("F:/单基因套路/BJX-437-1")
+setwd("F:/单基因套路/437-1")
 ########下载数据##############
 
 rm(list=ls()) #清空环境内变量 (Clear variables in the environment)
