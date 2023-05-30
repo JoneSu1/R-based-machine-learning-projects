@@ -1,8 +1,7 @@
 Project Introduction:
 
 
-**Analysis of snoRNAs Affecting Breast Cancer Survival and Prognosis and Predicting Biomarkers for Drug Therapy Applications
-**
+**Analysis of snoRNAs Affecting Breast Cancer Survival and Prognosis and Predicting Biomarkers for Drug Therapy Applications**
 
 This project downloads RNA-seq sequencing data and clinical information for BRCA patients from the TCGA database, and extracts differentially expressed snoRNAs between normal control group and breast cancer patient group from the RNA-seq data. Univariate and multivariate Cox regression analyses are conducted for survival analysis, constructing a survival risk scoring model. The risk score for each BRCA patient is calculated, and patients are divided into high-risk and low-risk groups based on the median value. Kaplan-Meier (KM) survival curves are used to analyze survival differences between high/low-risk groups, and ROC curves are employed to further evaluate the accuracy of the prognostic model. Line charts are created to predict the 1, 3, and 5-year survival rates for BRCA patients and analyze the relationship between the prognostic model and clinical characteristics. The SNORi database is used to analyze the correlation between key snoRNAs and copy number variations and methylation sites, as well as the functional enrichment of snoRNA complexes with snoRNPs. Finally, the CMap database is utilized to analyze potential therapeutic drugs for treating breast cancer.
 
