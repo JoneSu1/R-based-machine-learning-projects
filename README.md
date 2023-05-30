@@ -1,21 +1,21 @@
 Project Introduction:
 
 
-Analysis of snoRNAs Affecting Breast Cancer Survival and Prognosis and Predicting Biomarkers for Drug Therapy Applications
-
+**Analysis of snoRNAs Affecting Breast Cancer Survival and Prognosis and Predicting Biomarkers for Drug Therapy Applications
+**
 
 This project downloads RNA-seq sequencing data and clinical information for BRCA patients from the TCGA database, and extracts differentially expressed snoRNAs between normal control group and breast cancer patient group from the RNA-seq data. Univariate and multivariate Cox regression analyses are conducted for survival analysis, constructing a survival risk scoring model. The risk score for each BRCA patient is calculated, and patients are divided into high-risk and low-risk groups based on the median value. Kaplan-Meier (KM) survival curves are used to analyze survival differences between high/low-risk groups, and ROC curves are employed to further evaluate the accuracy of the prognostic model. Line charts are created to predict the 1, 3, and 5-year survival rates for BRCA patients and analyze the relationship between the prognostic model and clinical characteristics. The SNORi database is used to analyze the correlation between key snoRNAs and copy number variations and methylation sites, as well as the functional enrichment of snoRNA complexes with snoRNPs. Finally, the CMap database is utilized to analyze potential therapeutic drugs for treating breast cancer.
 
-iron death-related genes
+**iron death-related genes**
 
 In this project, we employed bioinformatics analysis methods to investigate and validate the accuracy of ferroptosis-related genes as biomarkers for coronary atherosclerotic heart disease (CHD). Firstly, we downloaded CHD RNA sequencing data and ferroptosis-related genes from the GEO and FerrDb databases. Next, we used the limma package to screen for differentially expressed ferroptosis-related genes in CHD patients and constructed a protein-protein interaction (PPI) network of these genes using the STRING database. We also conducted Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) analyses to understand the biological processes these differentially expressed genes participate in. Subsequently, we further screened for ferroptosis genes that could serve as biomarkers using LASSO and SVM-RFE methods, and verified the expression of these biomarkers in the GSE dataset and clinical samples. Finally, we calculated the potential index of ferroptosis genes, determined the composition of 22 immune cells in CHD patients using CIBERSORT, and analyzed the correlation between biomarkers and immune cells, as well as performed biomarker analysis using Gene Set Enrichment Analysis (GSEA) and Gene Set Variation Analysis (GSVA).
 
 
-PD-related Endoplasmic Reticulum Stress Core Gene Screening
+**PD-related Endoplasmic Reticulum Stress Core Gene Screening**
 
 
 The aim of this project is to screen and validate endoplasmic reticulum stress genes related to PD clinical characteristics. The project first conducts differential gene screening, disease trait-related gene module screening (WGCNA), and disease trait and disease-related endoplasmic reticulum stress gene screening (by obtaining a list of endoplasmic reticulum stress-related genes from public databases and intersecting with differentially expressed genes and disease-related module genes). Then, the relevant genes are validated by performing GO and KEGG analyses in R language, examining whether the related BC and biological pathways meet the requirements. Due to the large number of genes obtained and weak BC correlation, ROC diagnostic curves are used to screen high-quality related genes (only retaining genes with AUC values greater than 0.8), resulting in 17 remaining genes. These 17 genes are imported into the STRING database to construct a PPI network, which is then imported into Cytoscape. Using the maximum Clique centrality (MCC) algorithm of an external plugin, the top 5 core scoring genes are retained as the most relevant endoplasmic reticulum stress genes for PD. Finally, external datasets are searched to validate the correlation between these five genes and PD (by plotting single-gene expression box plots).
 
-Single Gene Immunotherapy Analysis
+**Single Gene Immunotherapy Analysis**
 
 This project aims to find genes related to OVOL1 gene expression and clinical characteristics, explore their immune environment, and ultimately identify potential immunotherapy biomarker targets.
